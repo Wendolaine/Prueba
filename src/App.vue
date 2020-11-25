@@ -17,10 +17,7 @@
    
   },
     data: () => ({
-      icons:[
-        'fab fa-facebook',
-        'fab fa-youtube'
-      ],
+     
       links: [
         'About',
         'Messages',

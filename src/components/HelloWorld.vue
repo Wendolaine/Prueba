@@ -9,9 +9,10 @@
         <v-col cols="12">
         <v-avatar class="mr-10" color="grey darken-1" size="32"></v-avatar>        
         
-        <v-btn flat color="#5a0c52" class="white--text " >
-          <router-link to="/about" class="white--text">About</router-link></v-btn>
-        <router-link to="/login">Login</router-link>
+        <v-btn  color="#5a0c52" class="white--text left" >
+          <router-link to="/About" class="white--text">About</router-link></v-btn>
+        <v-btn  color="#5a0c52"  >
+          <router-link class="white--text " to="/login">Login</router-link></v-btn>
 
         <!--<v-responsive max-width="230">
           <v-text-field dense flat hide-details rounded solo-inverted></v-text-field>
@@ -71,20 +72,27 @@
       <!--antes de footer--->
       <!-------------------->       
       <v-col cols="6">   
-          <v-card color="#FCE4EC" class="card-fondo ">           
-                <div class="card-texto">Crea tu propio contenido</div>           
+          <v-card  class="card-prefoot">           
+                <div class="text-sm-center card-texto">Únete a NIUFLEEX y aprovecha 
+                  los beneficios que ofrecemos</div>           
           </v-card>
-        </v-col>
+      </v-col>
           
       <v-col cols="3">   
-          <v-card color="#FCE4EC" class="card-fondo">           
-                <div class="card-texto">Crea tu propio contenido</div>           
-          </v-card>
-        </v-col>
+        <v-card color="#FCE4EC" class="card-prefoot"> 
+          <div class="icon-prefoot">
+            <v-icon x-large color="#5a0c52">mdi-thumbs-up-down</v-icon>            
+          </div>
+          <div class="text-sm-center card-texto">Crea tu propio contenido</div>  
+        </v-card>
+      </v-col>
 
-      <v-col cols="3">   
-         <v-card color="#FCE4EC" class="card-fondo ">           
-            <div class="card-texto">Crea tu propio contenido</div>           
+      <v-col cols="3" >   
+        <v-card color="#FCE4EC" class="card-prefoot">  
+          <div class="icon-prefoot">
+            <v-icon  x-large color="#5a0c52" >fa-file-alt</v-icon>            
+          </div>
+          <div class="card-texto">Visualiza contenido exclusivo</div>            
         </v-card>
       </v-col>
 
@@ -126,14 +134,20 @@ Vue.use(Vuetify, {
 /* texto de card */
 .card-texto{
   color:#5a0c52;
-  font-family: fantasy;
+  font-family: Segoe IU;
   font-weight:bold;
   text-align: center;
   font-size: 40px;
+  
 }
 
-.card-fondo{
+.card-prefoot{
+  padding-top: 80px;
   height: 20rem;
+}
 
+.icon-prefoot{
+  display: flex;
+  flex-flow: column wrap;
 }
 </style>
